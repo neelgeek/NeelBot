@@ -4,7 +4,7 @@
     "description": "Test bot for learning telegram bots",
     "main": "app.js",
     "scripts": {
-        "start": "node app.js"
+        "start": "BOT_TOKEN='407966345:AAE8xrjYPYCiauSFflbjr9h1LTYk8iqvWHU' node app.js"
     },
     "author": "",
     "license": "ISC",
