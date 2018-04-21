@@ -1,7 +1,6 @@
 const Telegraf = require('telegraf')
 const express = require('express');
-const bot = new Telegraf('407966345:AAE8xrjYPYCiauSFflbjr9h1LTYk8iqvWHU');
-
+const bot = new Telegraf(process.env.BOT_TOKEN);
 const app = express();
 
 bot.start((ctx) => ctx.reply('Welcome to the Neel Bot'));
