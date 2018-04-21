@@ -10,7 +10,7 @@ bot.command('about', ctx => {
 });
 
 bot.command('github', ctx => {
-    ctx.reply('Hey check out my github - github.com/neelgeek');
+    ctx.reply('Hey check this project on my github - github.com/neelgeek/NeelBot');
     console.log(ctx.update);
 })
 
@@ -21,6 +21,10 @@ bot.on("text", ctx => {
 
 bot.on("sticker", ctx => {
     ctx.reply('Hey,I dont support this feature still,but I am working on it !😎');
+})
+
+bot.catch((err) => {
+    console.log('Ooops', err)
 })
 
 
