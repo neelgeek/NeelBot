@@ -36,6 +36,11 @@ function LogCtx(ctx) {
 }
 
 
+function HTTPHandler(req, res) {
+    console.log(req);
+}
+
 var port = process.env.PORT | 8000;
-http.createServer().listen(port);
+http.createServer(HTTPHandler).listen(port);
+console.log("Running on port " + port);
 bot.startPolling();
