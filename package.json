@@ -1,0 +1,16 @@
+{
+    "name": "testbot",
+    "version": "1.0.0",
+    "description": "Test bot for learning telegram bots",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon app.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "nodemon": "^1.17.3",
+        "npm": "^5.8.0",
+        "telegraf": "^3.20.0"
+    }
+}
