@@ -2,7 +2,9 @@ const Telegraf = require('telegraf')
 const http = require('http');
 const bot = new Telegraf(process.env.BOT_TOKEN);
 //const bot = new Telegraf(process.env.BOT_TOKEN);
-
+var port = process.env.PORT || 8000;
+http.createServer(HTTPHandler).listen(port);
+console.log("Running on port " + port);
 
 bot.start((ctx) => ctx.reply('Welcome to the Neel Bot'));
 
@@ -40,7 +42,5 @@ function HTTPHandler(req, res) {
     console.log(req);
 }
 
-var port = process.env.PORT || 8000;
-http.createServer(HTTPHandler).listen(port);
-console.log("Running on port " + port);
+
 bot.startPolling();
